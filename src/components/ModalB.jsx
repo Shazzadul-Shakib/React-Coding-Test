@@ -30,16 +30,24 @@ export default function ModalB() {
             <div>
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn custom-primary-bg text-white  "
+                data-bs-toggle="modal"
+                data-bs-target="#modalA"
+              >
+                All Contacts
+              </button>
+              <button
+                type="button"
+                class="btn custom-secondary-bg text-white mx-1"
+              >
+                US Contacts
+              </button>
+              <button
+                type="button"
+                class="btn custom-border"
                 data-bs-dismiss="modal"
               >
                 Close
-              </button>
-              <button type="button" class="btn btn-primary mx-1">
-                All Contacts
-              </button>
-              <button type="button" class="btn btn-primary">
-                US Contacts
               </button>
             </div>
           </div>

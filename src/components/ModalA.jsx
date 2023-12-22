@@ -1,3 +1,5 @@
+import '../assets/custom.css';
+
 export default function ModalA() {
   return (
     <div
@@ -13,12 +15,6 @@ export default function ModalA() {
             <h1 class="modal-title fs-5" id="exampleModalLabel">
               Modal A
             </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer d-flex justify-content-between">
@@ -36,16 +32,24 @@ export default function ModalA() {
             <div>
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn custom-primary-bg text-white  "
+              >
+                All Contacts
+              </button>
+              <button
+                type="button"
+                class="btn custom-secondary-bg text-white mx-1"
+                data-bs-toggle="modal"
+                data-bs-target="#modalB"
+              >
+                US Contacts
+              </button>
+              <button
+                type="button"
+                class="btn custom-border"
                 data-bs-dismiss="modal"
               >
                 Close
-              </button>
-              <button type="button" class="btn btn-primary mx-1">
-                All Contacts
-              </button>
-              <button type="button" class="btn btn-primary">
-                US Contacts
               </button>
             </div>
           </div>
